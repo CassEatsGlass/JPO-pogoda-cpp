@@ -119,7 +119,9 @@ void MainWindow::readStationMeasure(){
     stationMeasure["key"] = key;
 
     double max = 0.0;
+    QString maxTimestamp;
     double min = DBL_MAX;
+    QString minTimestamp;
     double sum = 0;
     double i = 0;
     double extraSum = 0;
@@ -139,10 +141,12 @@ void MainWindow::readStationMeasure(){
         i++;
         if(val > max){
             max = val;
+            maxTimestamp = QDateTime::fromMSecsSinceEpoch(timestamp).toString("dd-MM HH:mm");;
             qDebug() << max;
         }
         if(val < min){
             min = val;
+            minTimestamp = QDateTime::fromMSecsSinceEpoch(timestamp).toString("dd-MM HH:mm");
             qDebug() << min;
         }
         m_stationMeasure.append(stationMeasure);
@@ -160,7 +164,9 @@ void MainWindow::readStationMeasure(){
     extraSum = extraSum/10;
     extraSum2 = extraSum2/5;
     stationMeasure["max"] = max;
+    stationMeasure["maxTimestamp"] = maxTimestamp;
     stationMeasure["min"] = min;
+    stationMeasure["minTimestamp"] = minTimestamp;
     stationMeasure["avg"] = round(sum/i * 100.0) / 100.0;
     stationMeasure["trend"] = extraSum >= extraSum2 ? "rosnący" : "malejący";
     m_stationMeasure.append(stationMeasure);
