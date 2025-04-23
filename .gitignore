@@ -10,6 +10,25 @@
 *.dll
 *.dylib
 
+# Qt build files
+build-*/
+*.o
+*.obj
+*.exe
+*.app
+*.dll
+*.so
+Makefile
+*.user
+*.pro.user
+moc_*
+qrc_*
+ui_*
+
+# Qt Creator
+*.autosave
+*.qmlproject.user
+*.qmlproject.user.*
 # Qt-es
 object_script.*.Release
 object_script.*.Debug
