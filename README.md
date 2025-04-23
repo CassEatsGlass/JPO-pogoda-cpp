@@ -6,7 +6,7 @@ Projekt na zaliczenie cpp, korzystający z API GIOŚ
 
 A Qt-based desktop application that visualizes real-time air quality data from Poland's official environmental API. Users can view detailed station measurements, explore data trends, filter by date ranges, and see the closest stations based on coordinates.
 
-![Screenshot](images/screenshot.png)
+![Screenshot](screenshot.png)
 
 ## Features
 
