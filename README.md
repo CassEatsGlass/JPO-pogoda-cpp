@@ -42,3 +42,8 @@ Clone the repo and open the `.pro` file in Qt Creator:
 ```bash
 git clone https://github.com/CassEatsGlass/JPO-pogoda-cpp.git
 cd JPO-pogoda-cpp
+```
+### Running
+```cmd
+windeployqt --qmldir=C:/Qt/6.8.3/mingw_64/qml ./build/stacje_pomiarowe.exe
+```
