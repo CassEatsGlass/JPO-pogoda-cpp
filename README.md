@@ -47,9 +47,6 @@ This project uses the following Qt modules:
 - **QtNetwork**
 - **QtMultimedia**
 
-### Required Qt Version:
-
-
 ### Installation
 
 Clone the repo and open the `.pro` file in Qt Creator:
