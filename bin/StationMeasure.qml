@@ -14,7 +14,7 @@ Item {
     Component.onCompleted: {
         mainWindow.fetchStationMeasure(station);
         console.log("The data is with us");
-        appWindow.width = 1150
+        appWindow.width = 1180
         appWindow.height = 800
     }
 
@@ -77,8 +77,8 @@ Item {
 
         anchors.left: chartView.right
         anchors.verticalCenter: chartView.verticalCenter
-        width: 143
-        height: 143
+        width: 160
+        height: 250
         color: parent.color
 
         Column{
@@ -89,7 +89,9 @@ Item {
             spacing: 10
             Text{ id: dane; text: "Dane:"; font.pixelSize: 20; font.bold: true }
             Text{ id: min; text: "Min: " + mainWindow.stationMeasure[mainWindow.stationMeasure.length - 1].min; font.pixelSize: 20}
+            Text{ id: minTimestamp; text: mainWindow.stationMeasure[mainWindow.stationMeasure.length - 1].minTimestamp; font.pixelSize: 20}
             Text{ id: max; text: "Max: " + mainWindow.stationMeasure[mainWindow.stationMeasure.length - 1].max; font.pixelSize: 20 }
+            Text{ id: maxTimestamp; text: mainWindow.stationMeasure[mainWindow.stationMeasure.length - 1].maxTimestamp; font.pixelSize: 20}
             Text{ id: avg; text: "Średnia: " + mainWindow.stationMeasure[mainWindow.stationMeasure.length - 1].avg; font.pixelSize: 20}
             Text{ id: trend; text: "Trend: " + mainWindow.stationMeasure[mainWindow.stationMeasure.length - 1].trend; font.pixelSize: 20}
         }
