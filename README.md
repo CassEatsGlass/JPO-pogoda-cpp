@@ -26,7 +26,8 @@ A Qt-based desktop application that visualizes real-time air quality data from P
 - QtCharts for plotting
 - QNetworkAccessManager for API communication
 - JSON parsing with QJsonDocument and QJsonObject
-
+  
+![Screenshot](chartscreenshot.png)
 ## Setup
 
 ### Requirements
