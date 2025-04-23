@@ -19,6 +19,7 @@ A Qt-based desktop application that visualizes real-time air quality data from P
 - Trend analysis: average, min, max calculations
 - Navigation between views using StackView
 
+![Screenshot](chartscreenshot.png)
 ## Technologies
 - Qt 6
 - QML for UI
@@ -27,7 +28,6 @@ A Qt-based desktop application that visualizes real-time air quality data from P
 - QNetworkAccessManager for API communication
 - JSON parsing with QJsonDocument and QJsonObject
   
-![Screenshot](chartscreenshot.png)
 ## Setup
 
 ### Requirements
