@@ -37,15 +37,15 @@ A Qt-based desktop application that visualizes real-time air quality data from P
   
 This project uses the following Qt modules:
 
-- **QtCore**: Core functionality of Qt, including event handling, time and date management, etc.
-- **QtWidgets**: A module providing a set of UI elements like buttons, windows, and text fields.
-- **QtTest**: The testing module for Qt, used for unit testing.
-- **QtQuick**: Provides features for building user interfaces using QML and JavaScript.
-- **QtQuick.Controls**: QML-based UI controls (like buttons, sliders, etc.).
-- **QtCharts**: Provides charting functionalities for graphical representations of data.
-- **QtQml**: Used for integrating C++ with QML and managing the object model between the two.
-- **QtNetwork**: For network programming, such as HTTP requests.
-- **QtMultimedia**: If your project needs multimedia (audio, video, etc.).
+- **QtCore**
+- **QtWidgets**
+- **QtTest**
+- **QtQuick**
+- **QtQuick.Controls**
+- **QtCharts**
+- **QtQml**
+- **QtNetwork**
+- **QtMultimedia**
 
 ### Required Qt Version:
 
