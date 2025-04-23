@@ -1,12 +1,13 @@
 # app.pro
-QT += core gui network qml quick positioning location widgets charts
+QT += core gui network qml quick positioning location widgets charts testlib
 CONFIG += c++17
 
 TARGET = stacje_pomiarowe
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp\
+    tests/test_mainwindow.cpp
 
 HEADERS += \
     mainwindow.h

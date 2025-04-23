@@ -27,7 +27,9 @@ public:
     QVariantList stationMeasure() const { return m_stationMeasure; }
     //Helpful for getting name of parameter
     QString  param;
-
+    //for tests
+    void setNetworkManager(QNetworkAccessManager *manager);
+    int getRequestType() const;
 public slots:
     // Fetching data from the API
     void fetchStations();

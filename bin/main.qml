@@ -4,7 +4,7 @@ import QtQuick.Controls 2.15
 ApplicationWindow {
     id: root
     visible: true
-    width: 1150
+    width: 1180
     height: 800
     title: "Pomiary Stacji"
 

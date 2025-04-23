@@ -357,3 +357,12 @@ void MainWindow::onNetworkReply(QNetworkReply *reply) {
         }
 
 }
+//for tests
+void MainWindow::setNetworkManager(QNetworkAccessManager *manager) {
+    m_networkManager = manager;
+}
+
+int MainWindow::getRequestType() const {
+    return requestType;
+}
+
